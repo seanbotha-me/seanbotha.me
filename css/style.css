@@ -283,7 +283,7 @@ section { padding: 5rem 0; border-bottom: 1px solid var(--rule); }
 }
 @media (max-width: 600px) {
   .services-grid, .ci-grid, .results-grid, .case-stat-row, .process-grid, .related-grid { grid-template-columns: 1fr; }
-  .nav-links, .nav-cta { display: none; }
+  .nav-cta { display: none; }
 }
 
 /* FOOTER */
@@ -454,4 +454,45 @@ header h1 em,
   display: inline;
   word-break: normal;
   hyphens: none;
+}
+/* ══ FINAL FIXES ══ */
+
+/* Nav — force visible on all screen sizes above mobile */
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex !important;
+    gap: 2rem;
+    list-style: none;
+  }
+  .nav-cta {
+    display: inline-block !important;
+  }
+}
+
+/* Clear fixed nav on inner pages */
+.breadcrumb {
+  padding-top: 5.5rem !important;
+}
+.case-hero {
+  padding-top: 5rem !important;
+}
+
+/* Clients index header */
+header {
+  padding-top: 5rem !important;
+}
+
+/* Broken images — hide completely, don't show alt text + icon */
+img:-moz-broken,
+img[alt]:not([src]),
+.ci-logo img {
+  color: transparent;
+  font-size: 0;
+}
+.ci-logo {
+  overflow: hidden;
+}
+.ci-logo img:not([src]),
+.ci-logo img[src=""] {
+  display: none !important;
 }
