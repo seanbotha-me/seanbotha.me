@@ -211,7 +211,7 @@ section { padding: 5rem 0; border-bottom: 1px solid var(--rule); }
 .hero h1 {
   font-family: var(--serif);
   font-size: clamp(2.4rem, 4.5vw, 3.2rem);
-   
+}   
 .hero h1 em { font-style: italic; color: var(--accent); }
 .hero-sub {
   margin-top: 2rem; max-width: 50ch; color: var(--ink-mid); font-size: 1.05rem;
