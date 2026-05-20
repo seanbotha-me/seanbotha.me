@@ -29,10 +29,10 @@
 </head>
 <body>
 
-<nav aria-label="Main navigation">
+<nav aria-label="Main navigation" style="position:fixed;inset:0 0 auto;z-index:200;background:rgba(247,245,240,0.93);backdrop-filter:blur(14px);border-bottom:1px solid #dedad2;">
   <div class="nav-inner">
     <a href="/" class="nav-logo">Sean Botha</a>
-    <ul class="nav-links" role="list">
+    <ul class="nav-links" role="list" style="display:flex;gap:2rem;list-style:none;">
       <li><a href="/">Home</a></li>
       <li><a href="/clients/" aria-current="page">Clients</a></li>
       <li><a href="/#services">Services</a></li>
@@ -51,7 +51,7 @@
   </div>
 </nav>
 
-<header style="padding:4rem 0 5rem;border-bottom:1px solid var(--rule);position:relative;overflow:hidden">
+<header style="padding:7rem 0 5rem;border-bottom:1px solid var(--rule);position:relative;overflow:hidden">
   <div style="position:absolute;top:-6rem;right:-4rem;width:38vw;height:38vw;max-width:480px;max-height:480px;border-radius:50%;background:radial-gradient(circle,var(--paper-w) 0%,transparent 70%);pointer-events:none"></div>
   <div class="container">
     <p class="label" style="opacity:0;animation:fadeUp 0.6s ease forwards 0.1s">Client work</p>
